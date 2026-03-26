@@ -14,13 +14,14 @@
             background-size: cover;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             padding-top: 45px;
+            padding-bottom: 45px;
         }
     </style>
 
 </head>
 <body>
 
-    <div class="container" style="background-color: rgba(255, 255, 255, 0.737); width: 550px; height: 500px; padding: 50px;">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.737); width: 550px; height: 560px; padding: 50px;">
 
         <div class="row">
             <center>
@@ -47,6 +48,7 @@
         <div class="">
             <input type="checkbox" class="form-check-input" id="checkboxID" name="confirm" value="yes">
             <label class="form-check-label" for="check1">Stay logged in.</label>
+            <p style="color: palevioletred; text-align: left;"><i>Your session will stay active on this device.</i></p>
         </div>
 
         <br>
@@ -56,13 +58,23 @@
 
                 <div class="col">
                     <center>
-                        <button type="button" style="background-color: pink; color: white;" class="btn btn-secondary">Login</button>
-                        <button type="button" style="background-color: pink; color: white;" class="btn btn-secondary">Cancel</button>
+                        <button type="submit" style="background-color: pink; color: white;" class="btn btn-secondary" onclick="">Login</button>
+
+
+                        <button type="reset" style="background-color: pink; color: white;" class="btn btn-secondary">Cancel</button>
                     </center>
                 </div>
 
             </div>
+            
         </div>
+
+        <br>
+
+        <div class="row">
+            <p style="color: palevioletred; text-align: center;"><i><u>Forgot username / password?</u></i></p>
+        </div>
+
     </div>
 
     <script>
@@ -70,19 +82,19 @@
     //Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
 
 
-//Use Switch Code for the checkbox
+    //Use Switch Code for the checkbox
 
-function function_name_here() {
-    let variable_name= document.getElementById("checkboxID").checked; 
+    function LoginForm() {
+        let confirm = document.getElementById("checkboxID").checked; 
          //when checked, it reads true
 
-    switch(variable_name) {
+    switch(confirm) {
         case true:
-             //use innerHTML to display a message
+            message = "Welcome Rainglow10!"
         break;
 
         case false:
-            //use innerHTML to show nothing. use quotation;
+            message = "Incorrect username and/or password."
         break;
 
         //default may almost never needed since there is already true and false statement;
