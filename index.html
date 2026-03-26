@@ -46,7 +46,7 @@
         <br>
 
         <div class="">
-            <input type="checkbox" class="form-check-input" id="checkboxID" name="confirm" value="yes">
+            <input type="checkbox" class="form-check-input" id="check" name="confirm" value="yes">
             <label class="form-check-label" for="check1">Stay logged in.</label>
             <p style="color: palevioletred; text-align: left;"><i>Your session will stay active on this device.</i></p>
         </div>
@@ -58,7 +58,7 @@
 
                 <div class="col">
                     <center>
-                        <button type="submit" style="background-color: pink; color: white;" class="btn btn-secondary" onclick="">Login</button>
+                        <button type="submit" style="background-color: pink; color: white;" class="btn btn-secondary" onclick="loginNow()">Login</button>
 
 
                         <button type="reset" style="background-color: pink; color: white;" class="btn btn-secondary">Cancel</button>
@@ -78,14 +78,29 @@
     </div>
 
     <script>
+        function loginNow(){
+
+            var uname = document.getElementById("uname").value;
+            var password = document.getElementById("password").value;
+            var message = document.getElementById("message").value;
+
+            let ValidUname = Rainglow10
+            let ValidPw = penguin
+
+            if (username === ValidUname && password === ValidPw)
+
+
+        }
+
+
     
     //Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
 
 
     //Use Switch Code for the checkbox
 
-    function LoginForm() {
-        let confirm = document.getElementById("checkboxID").checked; 
+    function checkBox() {
+        let confirm = document.getElementById("check").checked; 
          //when checked, it reads true
 
     switch(confirm) {
@@ -96,8 +111,6 @@
         case false:
             message = "Incorrect username and/or password."
         break;
-
-        //default may almost never needed since there is already true and false statement;
     }
 }
 </script>
