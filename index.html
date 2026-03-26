@@ -82,22 +82,26 @@
 
             var uname = document.getElementById("uname").value;
             var password = document.getElementById("password").value;
-            var message = document.getElementById("message").value;
 
             let ValidUname = Rainglow10
             let ValidPw = penguin
 
-            if (username === ValidUname && password === ValidPw)
+            if (username === "" || password === ""){
+                alert("Input username/password.")
+            }
 
+            else if (uname == ValidUname && password == ValiedPw){
+                alert ("Hi there, Rainglow10!")
+            }
 
+            else if (uname == "" && password == ""){
+                alert ("Incorrect username/password.")
+            }
+
+            else {
+                alert ("Please enter the following.")
+            }
         }
-
-
-    
-    //Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
-
-
-    //Use Switch Code for the checkbox
 
     function checkBox() {
         let confirm = document.getElementById("check").checked; 
