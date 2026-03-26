@@ -20,25 +20,75 @@
 </head>
 <body>
 
-    <div class="container" style="background-color: rgba(255, 255, 255, 0.737); width: 550px;">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.737); width: 550px; height: 500px; padding: 50px;">
 
         <div class="row">
             <center>
-            <img src="https://i.pinimg.com/736x/b6/e6/87/b6e687094f11e465e7d710a6b5754a4e.jpg" style="width: 50px; height: 50px; border-radius: 100px;">
+                <img src="https://i.pinimg.com/736x/b6/e6/87/b6e687094f11e465e7d710a6b5754a4e.jpg"  style="width: 50px; height: 50px; border-radius: 100px;">
             </center>
             <h1 style="color: palevioletred; text-align: center;"><b>Login</b></h1>
+            <p style="color: palevioletred; text-align: center;">Welcome back!</p>
         </div>
 
         <div class="row">
-            <label for="uname"><b>Username</b></label>
+            <label for="uname" style="background-color: rgb(241, 123, 172); color: white; width: auto; border-radius: 10px;"><b>Username</b></label>
             <input id="uname" type="text" placeholder="Enter your username..." class="form-control" style="width: 500px;">
         </div>
 
+        <br>
+
         <div class="row">
-            <label for="password"><b>Password</b></label>
-            <input id="password" type="text" placeholder="Enter your password..." class="form-control" style="width: 500px;">
+            <label for="password" style="background-color: rgb(241, 123, 172); color: white; width: auto; border-radius: 10px;"><b>Password</b></label>
+            <input id="password" type="password" placeholder="Enter your password..." class="form-control" style="width: 500px;">
         </div>
 
+        <br>
+
+        <div class="">
+            <input type="checkbox" class="form-check-input" id="checkboxID" name="confirm" value="yes">
+            <label class="form-check-label" for="check1">Stay logged in.</label>
+        </div>
+
+        <br>
+
+        <div class="d-grid gap-3">
+            <div class="row">
+
+                <div class="col">
+                    <center>
+                        <button type="button" style="background-color: pink; color: white;" class="btn btn-secondary">Login</button>
+                        <button type="button" style="background-color: pink; color: white;" class="btn btn-secondary">Cancel</button>
+                    </center>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <script>
+    
+    //Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
+
+
+//Use Switch Code for the checkbox
+
+function function_name_here() {
+    let variable_name= document.getElementById("checkboxID").checked; 
+         //when checked, it reads true
+
+    switch(variable_name) {
+        case true:
+             //use innerHTML to display a message
+        break;
+
+        case false:
+            //use innerHTML to show nothing. use quotation;
+        break;
+
+        //default may almost never needed since there is already true and false statement;
+    }
+}
+</script>
+
 </body>
 </html>
